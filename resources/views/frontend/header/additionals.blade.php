@@ -1,6 +1,6 @@
 <div class="additional additional--left">
     <div class="additional__socials">
-        <a href="https://github.com/krtv-m" target="_blank">
+        <a href="https://github.com/crtv-m" target="_blank">
             <svg class="icon"><use xlink:href="#github"></use></svg>
         </a>
 
@@ -8,9 +8,11 @@
             <svg class="icon"><use xlink:href="#telegram"></use></svg>
         </a>
 
+        <?php /*
         <a href="" target="_blank">
             <svg class="icon"><use xlink:href="#instagram"></use></svg>
-        </a>
+        </a>*/
+        ?>
 
         <a href="https://www.facebook.com/profile.php?id=61562474045095" target="_blank">
             <svg class="icon"><use xlink:href="#facebook"></use></svg>

@@ -1,5 +1,6 @@
 @include('frontend.header.header')
 
+
 <section class="hero-block">
     <div class="container">
         <div class="hero-block__hello">Hi, my name is</div>
@@ -55,10 +56,8 @@
 
 <section id="experience">
     <div class="container">
-        <div class="container">
-            <div class="title"><h2>Where I’ve Worked</h2></div>
-            @include('frontend.homepage.tab-list')
-        </div>
+        <div class="title"><h2>Where I’ve Worked</h2></div>
+        @include('frontend.homepage.tab-list')
     </div>
 </section>
 
@@ -66,13 +65,12 @@
 <section id="work">
     <div class="container">
         <div class="title"><h2>Projects I’ve Developed</h2></div>
+        @include('frontend.homepage.projects-list')
+
+        <div class="title">Projects I’ve Developed</div>
+        @include('frontend.homepage.github-calendar')
     </div>
 </section>
-
-
-
-
-
 
 
 <section id="contact" class="contacts">

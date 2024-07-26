@@ -25,4 +25,5 @@
         </div>
         <!-- Header Section Ends Here -->
 
+        @include('frontend.header.bot')
         @include('frontend.header.additionals')

@@ -32,7 +32,6 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-
 }
 
 p {
@@ -245,12 +244,18 @@ section .container {
 .hero-block {
     position: relative;
 }
+.title {
+    margin: 10px 0 40px;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    white-space: nowrap;
+}
 .title h2 {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 10px 0 40px;
     width: 100%;
     font-size: 26px;
     white-space: nowrap;
@@ -273,6 +278,7 @@ section .container {
     margin-left: 20px;
     background-color: var(--lightest-slate);
 }
+
 .simple h2 {
     justify-content: center;
 }
@@ -448,13 +454,7 @@ section .container {
     font-family: var(--font-secondary);
     color: var(--light-slate);
 }
-
 /* END section contacts */
-
-
-
-
-
 
 
 :root{
@@ -519,9 +519,6 @@ section .container {
 }
 
 
-
-
-
 .git-calendar__bar {
     display: flex;
     justify-content: space-between;
@@ -567,8 +564,7 @@ section .container {
 }
 .project__status {
     color: var(--font-hover-color);
-    font-family: 14px;
-    font-size: var(--fz-xs);
+    font-size: 18px;
     font-weight: 400;
 }
 .project__name {
@@ -592,7 +588,6 @@ section .container {
 }
 
 
-
 .tooltip {
     display: none;
     position: absolute;
@@ -602,7 +597,27 @@ section .container {
     border-radius: 5px;
     z-index: 1;
 }
-
 .graph:hover .tooltip {
     display: block;
 }
+
+
+
+/* bot */
+.bot__wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    right: 100px;
+    bottom: 30px;
+    height: 200px;
+    width: 200px;
+}
+.bot__wrapper svg {
+    fill: #64ffda;
+}
+.bot__chat {
+    padding: 20px ;
+}
+/* END bot */
