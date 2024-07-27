@@ -4,6 +4,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+
     document.getElementById('open-modal').addEventListener('click', () => {
         Swal.fire({
             title: 'Modal Title',
@@ -12,4 +13,5 @@
             confirmButtonText: 'Close'
         });
     });
+
 </script>
