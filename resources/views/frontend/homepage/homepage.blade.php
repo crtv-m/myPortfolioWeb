@@ -66,9 +66,29 @@
     <div class="container">
         <div class="title"><h2>Projects I’ve Developed</h2></div>
         @include('frontend.homepage.projects-list')
+    </div>
+</section>
 
-        <div class="title">Projects I’ve Developed</div>
+
+<section>
+    <div class="container">
+        <div class="title"><h2>My Github projects</h2></div>
         @include('frontend.homepage.github-calendar')
+
+        <div class="title">Repositories projects</div>
+        <div class="project__status">view the archive</div>
+        <div class="repositories__list">
+
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+            @include('frontend.homepage.repository-card')
+
+        </div>
     </div>
 </section>
 

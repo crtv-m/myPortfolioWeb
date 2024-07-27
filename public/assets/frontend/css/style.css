@@ -97,7 +97,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 75vh;
+    min-height: 90vh;
 }
 section.hero-block {
     min-height: 100vh;
@@ -220,6 +220,9 @@ section .container {
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
     transition: .3s;
+}
+.additional a {
+    color: var(--light-slate);
 }
 .additional a:hover {
     color: var(--font-hover-color);
@@ -551,7 +554,7 @@ section .container {
     box-shadow: 0 10px 30px -15px #020c1bb3;
 }
 .project__screenshot img {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 .project__content {
@@ -575,12 +578,13 @@ section .container {
     font-weight: 600;
 }
 .project__description {
+    z-index: 5;
     margin: 0 0 20px;
     padding: 25px;
     background: var(--background-main-light);
     font-family: var(--font-secondary);
     font-size: 18px;
-    z-index: 5;
+    box-shadow: 0 10px 30px -15px #020C1BB2;
 }
 .project__technologies {
     display: flex;
@@ -621,3 +625,85 @@ section .container {
     padding: 20px ;
 }
 /* END bot */
+
+
+/* repository list  */
+.repositories__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 50px 0;
+}
+.repository-card {
+    padding: 28px 32px;
+    background-color: #112240;
+    box-shadow: 0 10px 30px -15px #020C1BB2;
+    transition: .3s;
+    border: 3px;
+}
+.repository-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.repository-card:hover .repository-card__title {
+    color: var(--font-hover-color);
+}
+.repository-card__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 35px;
+}
+.repository-card__folder svg {
+    height: 40px;
+    width: 40px;
+    color: var(--font-hover-color);
+}
+.repository-card__links {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    gap: 15px;
+}
+.repository-card__links svg {
+    height: 22px;
+    width: 22px;
+    color: var(--light-slate);
+}
+.repository-card__links a:hover svg {
+    color: var(--font-hover-color);
+}
+.repository-card__title {
+    display: block;
+    margin: 0 0 10px;
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    line-height: 1.4;
+    font-size: 20px;
+    text-decoration: none;
+}
+.repository-card__title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.repository-card__content {
+    margin: 0 0 15px;
+    color: var(--light-slate);
+    font-family: var(--font-secondary);
+    line-height: 1.4;
+    font-size: 15px;
+}
+.repository-card__footer {
+    display: flex;
+    gap: 10px;
+}
+.repository-card__footer span {
+    font-size: 13px;
+    color: var(--primary-color);
+    opacity: .8;
+    font-family: var(--font-secondary);
+}
+/* END repository list  */
