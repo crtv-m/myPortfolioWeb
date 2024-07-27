@@ -8,7 +8,7 @@
         Swal.fire({
             title: 'Modal Title',
             text: 'This is the content of the modal window.',
-            icon: 'alarm',
+            //icon: 'alarm',
             confirmButtonText: 'Close'
         });
     });
