@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}">
 
+    <!-- Modal style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
     <!-- Icons svg Link -->
     @php
         include public_path('assets/frontend/icon/svg-icons.html');

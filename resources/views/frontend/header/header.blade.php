@@ -18,6 +18,7 @@
                     <div class="main-menu__wrapper">
                         @include('frontend.header.navigation')
                         <a href="" class="btn">Resume</a>
+                        <a href="" class="btn">En</a>
                     </div>
 
                 </div>
@@ -25,5 +26,5 @@
         </div>
         <!-- Header Section Ends Here -->
 
-        @include('frontend.header.bot')
+        {{-- @include('frontend.header.bot') --}}
         @include('frontend.header.additionals')

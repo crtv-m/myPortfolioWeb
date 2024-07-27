@@ -10,7 +10,7 @@
             I’m a software engineer specializing in building (and occasionally designing) exceptional digital
             experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement
         </div>
-        <a class="btn btn--big" href="#">Check out my course!</a>
+        <a class="btn btn--big" id="open-modal" data-lightbox="inline">Check out my course!</a>
         <div id="canvas-container"></div>
     </div>
 </section>
