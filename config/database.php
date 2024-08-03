@@ -2,7 +2,17 @@
 
 use Illuminate\Support\Str;
 
+use Illuminate\Database\DBAL\TimestampType;
+
+
+
 return [
+
+    'dbal' => [
+        'types' => [
+            'timestamp' => TimestampType::class,
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -15,6 +25,7 @@ return [
     | is explicitly specified when you execute a query / statement.
     |
     */
+
 
     'default' => env('DB_CONNECTION', 'sqlite'),
 
@@ -40,6 +51,7 @@ return [
             'busy_timeout' => null,
             'journal_mode' => null,
             'synchronous' => null,
+
         ],
 
         'mysql' => [

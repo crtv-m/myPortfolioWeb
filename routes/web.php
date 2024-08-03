@@ -7,5 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/projects', function () {
-    return view('frontend.footer.footer');
+    return view('frontend.projects');
 });
+
+Route::get('/posts', ['App\\Http\\Controllers\\PostController', 'show']);
